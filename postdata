@@ -1,0 +1,1 @@
+curl -H "Content-Type: application/json" --data @customer.json http://localhost:8080/user/create
