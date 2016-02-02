@@ -1,0 +1,19 @@
+{
+  "addressList": [
+    {
+      "addressType": "Home",
+      "streetAddress1": "781N 1900E",
+      "streetAddress2": null,
+      "city": "Saratoga Springs",
+      "state": "UT",
+      "zipCode": "84045"
+    }
+  ],
+  "weblogin": {
+    "userName": "pjka10",
+    "password": "martians"
+  },
+  "firstName": "Pete",
+  "lastName": "jkant",
+  "country": "US"
+}
