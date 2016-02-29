@@ -1,5 +1,6 @@
 package com.lassons;
 
+import com.lassons.domain.Approval;
 import com.lassons.entity.Address;
 import com.lassons.entity.Customer;
 import com.lassons.entity.WebLogin;
@@ -28,8 +29,12 @@ public class DemoApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(DemoApplication.class, args);
-		@SuppressWarnings("deprecation")
 		Customer customer  = new Customer();
+        Approval approval = new Approval();
+        ArrayList<Approval> appList = new ArrayList<>();
+        appList.add(approval);
+        appList.add(approval);
+
 		ArrayList<Address> addList = new ArrayList<>();
 
 		addList.add(new Address());
@@ -40,7 +45,8 @@ public class DemoApplication {
 		ObjectMapper mapper = new ObjectMapper();
 		try
 		{
-			mapper.writeValue(new File("/Users/petejayakant/customer.json"), customer);
+			//mapper.writeValue(new File("/Users/petejayakant/customer.json"), customer); // converts java to json.
+            mapper.writeValue(new File("/Users/petejayakant/approvals.json"), appList); // converts java to json.
 		} catch (JsonGenerationException e)
 		{
 			e.printStackTrace();
